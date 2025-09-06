@@ -44,7 +44,6 @@ function createSlide(item, index) {
                 <p class="description musical-element">${item.description}</p>
             </div>
                  <img src="${item.image}" alt="${item.title}" class="slide-image musical-element">
-
         </div>
     `;
 }
@@ -99,14 +98,14 @@ async function loadData() {
         // Fallback to sample data if JSON fails to load
         carouselData = [
             {
-                image: "./images/trickglass-1.JPG",
+                image: "./images/glass-aina-1.JPG",
                 title: "Resonance (Fallback)",
                 category: "vessel",
                 collaborator: "Garden of Magic",
                 description: "Shiney trick vessels"
             },
             {
-                image: "./images/trickglass-1.JPG",
+                image: "./images/glass-aina-2.JPG",
                 title: "Goblin Rings Compositions (Fallback)",
                 category: "ring",
                 collaborator: "Goblin Market",

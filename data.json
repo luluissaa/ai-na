@@ -8,7 +8,14 @@
     },
     {
         "image": "./images/glass-aina-2.JPG",
-        "title": "Minimalist Compositions",
+        "title": "Pearl",
+        "category": "vessels",
+        "collaborator": "Studio Noir", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/glass-aina-2.JPG",
+        "title": "Compositions",
         "category": "Design",
         "collaborator": "Studio Noir", 
         "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."

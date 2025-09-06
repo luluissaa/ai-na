@@ -50,7 +50,7 @@ function createSlide(item, index) {
 
 function createNavigation() {
     return carouselData.map((_, index) => 
-        `<div class="nav-dot ${index === 0 ? 'active' : ''}" data-slide="${index}"></div>`
+        `<div class="nav-dot musical-element ${index === 0 ? 'active' : ''}" data-slide="${index}"></div>`
     ).join('');
 }
 

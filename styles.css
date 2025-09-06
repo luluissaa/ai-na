@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #ffffff;
+    color: #000000;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    background: #ffffff;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.slide-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.slide-image:hover {
+    filter: grayscale(80%);
+}
+
+.slide-content {
+    width: 50%;
+    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #000000;
+}
+
+.slide-content h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    transition: transform 0.3s ease;
+}
+
+.slide-content h1:hover {
+    transform: translateX(4px);
+}
+
+.slide-content h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.slide-content h2:hover {
+    opacity: 1;
+}
+
+.slide-content .collaborator {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    transition: letter-spacing 0.3s ease;
+}
+
+.slide-content .collaborator:hover {
+    letter-spacing: 0.02em;
+}
+
+.slide-content .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.slide-content .description:hover {
+    opacity: 1;
+}
+
+.carousel-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000000;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-dot:hover,
+.nav-dot.active {
+    background: #000000;
+    transform: scale(1.2);
+}
+
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    pointer-events: none;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000000;
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    pointer-events: all;
+}
+
+.arrow:hover {
+    background: #000000;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.musical-element {
+    cursor: pointer;
+    position: relative;
+}
+
+.musical-element::after {
+    content: '♪';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.musical-element:hover::after {
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex-direction: column;
+    }
+
+    .slide-image,
+    .slide-content {
+        width: 100%;
+        height: 50%;
+    }
+
+    .slide-content {
+        border-left: none;
+        border-top: 1px solid #000000;
+        padding: 20px;
+    }
+
+    .slide-content h1 {
+        font-size: 2rem;
+    }
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    opacity: 0.7;
+}

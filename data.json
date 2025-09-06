@@ -1,13 +1,13 @@
 [
     {
-        "image": "./images/trickglass-1.JPG",
+        "image": "./images/glass-aina-1.JPG",
         "title": "Shiney",
         "category": "vessels", 
         "collaborator": "Garden of Magic",
         "description": "Chimes and music and things"
     },
     {
-        "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop",
+        "image": "./images/glass-aina-2.JPG",
         "title": "Minimalist Compositions",
         "category": "Design",
         "collaborator": "Studio Noir", 

@@ -139,7 +139,7 @@ function initCarousel() {
     
     // Musical elements
     document.querySelectorAll('.musical-element').forEach(element => {
-        element.addEventListener('mouseenter','touchstart', playRandomNote);
+        element.addEventListener('mouseleave', playRandomNote);
     });
     
     // Auto-advance carousel
@@ -154,4 +154,4 @@ function initCarousel() {
 document.addEventListener('DOMContentLoaded', loadData);
 
 // Enable audio context on user interaction
-document.addEventListener('click', initAudio, { once: true });
+document.addEventListener('DOMContentLoaded', initAudio, { once: true });

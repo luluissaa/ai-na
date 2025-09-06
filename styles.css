@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+  
 body {
-    font-family: 'Cossette Texte', serif;
+    font-family: "Cossette Texte", sans-serif;
     background: #ffffff;
     color: #000000;
     line-height: 1.4;
@@ -27,16 +30,13 @@ body {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    border: 2px solid #000000;
     background: #ffffff;
-    padding-bottom: 80px;
 }
 
 .carousel-wrapper {
     overflow: hidden;
     position: relative;
-    height: auto;
-    min-height: 600px;
+    height: 600px;
 }
 
 .carousel-slide {
@@ -46,31 +46,44 @@ body {
     opacity: 0;
     transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
 .carousel-slide.active {
     opacity: 1;
 }
 
+.slide-image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(70%);
+    transition: filter 0.3s ease;
+}
+
+.slide-image:hover {
+    filter: grayscale(80%);
+}
+
 .slide-content {
-    width: 100%;
+    width: 50%;
     padding: 40px;
-    border-bottom: 1px solid #000000;
-    background: #ffffff;
-    order: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .slide-content h1 {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 300;
     margin-bottom: 16px;
     letter-spacing: -0.02em;
     transition: transform 0.3s ease;
 }
 
 .slide-content h1:hover {
-    transform: translateX(4px);
+    transform: translateX(1px);
 }
 
 .slide-content h2 {
@@ -88,7 +101,7 @@ body {
 }
 
 .slide-content .collaborator {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.1rem;
     margin-bottom: 20px;
     transition: letter-spacing 0.3s ease;
@@ -109,52 +122,19 @@ body {
     opacity: 1;
 }
 
-.slide-image-container {
-    width: 100%;
-    aspect-ratio: 4/5;
-    overflow: hidden;
-    order: 2;
-    position: relative;
-    max-width: 500px;
-    margin: 20px auto 0 auto;
-    flex-shrink: 0;
-}
-
-.slide-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.slide-image:hover {
-    filter: grayscale(80%);
-}
-
-.carousel-arrows {
-    position: absolute;
-    bottom: -60px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 0 20px;
-    z-index: 10;
-}
-
 .carousel-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 8px;
+    gap: 12px;
 }
 
 .nav-dot {
-    width: 8px;
-    height: 8px;
-    border: 1px solid #000000;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000000;
     background: transparent;
     border-radius: 50%;
     cursor: pointer;
@@ -164,22 +144,33 @@ body {
 .nav-dot:hover,
 .nav-dot.active {
     background: #000000;
-    transform: scale(1.3);
+    transform: scale(1.2);
+}
+
+.carousel-arrows {
+    position: absolute;
+    top: 100%;
+    transform: translateY(50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    pointer-events: none;
 }
 
 .arrow {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border: 2px solid #000000;
     background: #ffffff;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: all 0.3s ease;
-    font-family: 'Cossette Texte', serif;
+    pointer-events: all;
 }
 
 .arrow:hover {
@@ -189,7 +180,7 @@ body {
 }
 
 .musical-element {
-    cursor: pointer;
+    cursor:auto;
     position: relative;
 }
 
@@ -208,90 +199,24 @@ body {
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 30px 15px;
+    .carousel-slide {
+        flex-direction: column;
     }
 
-    .carousel-wrapper {
-        min-height: 500px;
+    .slide-image,
+    .slide-content {
+        width: 100%;
+        height: 50%;
     }
 
     .slide-content {
-        padding: 30px 20px;
+        border-left: none;
+        border-top: 1px solid #000000;
+        padding: 20px;
     }
 
     .slide-content h1 {
         font-size: 2rem;
-    }
-
-    .slide-image-container {
-        max-width: 400px;
-    }
-
-    .carousel-arrows {
-        bottom: -50px;
-        padding: 0 10px;
-    }
-
-    .arrow {
-        width: 35px;
-        height: 35px;
-        font-size: 0.9rem;
-    }
-
-    .nav-dot {
-        width: 7px;
-        height: 7px;
-    }
-}
-
-@media (max-width: 480px) {
-    .slide-content {
-        padding: 20px 15px;
-    }
-
-    .slide-content h1 {
-        font-size: 1.8rem;
-        margin-bottom: 12px;
-    }
-
-    .slide-content h2 {
-        font-size: 0.9rem;
-        margin-bottom: 18px;
-    }
-
-    .slide-content .collaborator {
-        font-size: 1rem;
-        margin-bottom: 15px;
-    }
-
-    .slide-content .description {
-        font-size: 0.95rem;
-        line-height: 1.5;
-    }
-
-    .slide-image-container {
-        max-width: 320px;
-    }
-
-    .carousel-arrows {
-        bottom: -45px;
-        padding: 0 5px;
-    }
-
-    .arrow {
-        width: 30px;
-        height: 30px;
-        font-size: 0.8rem;
-    }
-
-    .nav-dot {
-        width: 6px;
-        height: 6px;
-    }
-
-    .carousel-nav {
-        gap: 6px;
     }
 }
 
@@ -302,5 +227,4 @@ body {
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
     opacity: 0.7;
-    font-family: 'Cossette Texte', serif;
 }

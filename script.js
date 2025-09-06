@@ -37,13 +37,14 @@ let slides = [];
 function createSlide(item, index) {
     return `
         <div class="carousel-slide ${index === 0 ? 'active' : ''}">
-            <img src="${item.image}" alt="${item.title}" class="slide-image musical-element">
             <div class="slide-content">
                 <h1 class="musical-element">${item.title}</h1>
                 <h2 class="musical-element">${item.category}</h2>
                 <p class="collaborator musical-element">${item.collaborator}</p>
                 <p class="description musical-element">${item.description}</p>
             </div>
+                 <img src="${item.image}" alt="${item.title}" class="slide-image musical-element">
+
         </div>
     `;
 }
@@ -98,17 +99,17 @@ async function loadData() {
         // Fallback to sample data if JSON fails to load
         carouselData = [
             {
-                image: "https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=800&h=600&fit=crop",
+                image: "./images/trickglass-1.JPG",
                 title: "Resonance (Fallback)",
-                category: "Photography",
-                collaborator: "Maria Santos",
-                description: "An exploration of sound through visual metaphors, capturing the invisible waves that connect us all."
+                category: "vessel",
+                collaborator: "Garden of Magic",
+                description: "Shiney trick vessels"
             },
             {
-                image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop",
-                title: "Minimalist Compositions (Fallback)",
-                category: "Design",
-                collaborator: "Studio Noir",
+                image: "./images/trickglass-1.JPG",
+                title: "Goblin Rings Compositions (Fallback)",
+                category: "ring",
+                collaborator: "Goblin Market",
                 description: "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
             }
         ];

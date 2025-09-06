@@ -139,11 +139,13 @@ function initCarousel() {
     
     // Musical elements
     document.querySelectorAll('.musical-element').forEach(element => {
-        element.addEventListener('pointerenter', playRandomNote);
+        element.addEventListener('mouseenter', playRandomNote);
+        element.addEventListener('click', playRandomNote);
+
     });
     
     // Auto-advance carousel
-    setInterval(nextSlide, 5000);
+    setInterval(nextSlide, 8000);
     
     // Show content
     document.getElementById('loading').style.display = 'none';

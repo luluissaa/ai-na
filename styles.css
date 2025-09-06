@@ -62,7 +62,7 @@ body {
 }
 
 .slide-image:hover {
-    filter: grayscale(80%);
+    filter: grayscale(50%);
 }
 
 .slide-content {

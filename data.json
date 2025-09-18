@@ -1,23 +1,122 @@
 [
     {
         "image": "./images/glass-aina-1.JPG",
-        "title": "Shiney",
-        "category": "vessels", 
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
         "collaborator": "Garden of Magic",
         "description": "Chimes and music and things"
     },
     {
         "image": "./images/glass-aina-2.JPG",
-        "title": "Pearl",
+        "title": "Garden of Liquid Light",
         "category": "vessels",
-        "collaborator": "Studio Noir", 
+        "collaborator": "Garden of Magic", 
         "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
     },
     {
-        "image": "./images/glass-aina-2.JPG",
-        "title": "Compositions",
-        "category": "Design",
-        "collaborator": "Studio Noir", 
+        "image": "./images/aina--1.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
         "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--2.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--3.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--4.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--5.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--6.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--7.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--8.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--9.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--10.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--11.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--12.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic",
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--13.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    },
+    {
+        "image": "./images/aina--14.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "Stripped down to essence, these compositions find beauty in restraint and purposeful emptiness."
+    }
+    ,
+    {
+        "image": "./images/aina--15.JPG",
+        "title": "Garden of Liquid Light",
+        "category": "vessels",
+        "collaborator": "Garden of Magic", 
+        "description": "This glass vessel collection translates Garden of Magic's sonic explorations into tangible form - each piece embodying a different frequency from Dora Daria's musical palette, from crystalline piano improvisations to the deep weight of breakbeat rhythms. Like her live performances that blur genre boundaries in real time, these vessels dissolve the line between art object and functional form, creating physical spaces for the quiet magic that lives between beats."
     }
 ]

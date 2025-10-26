@@ -57,12 +57,12 @@ body {
     width: 50%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(70%);
+    filter: grayscale(20%);
     transition: filter 0.3s ease;
 }
 
 .slide-image:hover {
-    filter: grayscale(50%);
+    filter: grayscale(20%);
 }
 
 .slide-content {
@@ -127,7 +127,8 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateY(600%) translatex(-50%);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 12px;
 }
 

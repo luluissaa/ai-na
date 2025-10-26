@@ -124,9 +124,10 @@ body {
 
 .carousel-nav {
     position: absolute;
-    bottom: 20px;
+    top: 50%;
     left: 50%;
-    transform: translateY(600%) translatex(-50%);
+    align-content: end;
+    transform: translatex(-50%);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 12px;
